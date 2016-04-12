@@ -15,9 +15,14 @@
     return [NSString hyb_isValidPersonID:self];
 }
 
+/*
+ *  功能：判断是否在地区码内
+ *  参数：地区码
+ */
+
 + (BOOL)_areaCode:(NSString *)sProvince
 {
-    // 省份代码
+    // 省份代码 地区码
     NSArray *areasArray =@[@"11",@"12", @"13",@"14", @"15",@"21", @"22",@"23", @"31",@"32", @"33",@"34", @"35",@"36", @"37",@"41", @"42",@"43", @"44",@"45", @"46",@"50", @"51",@"52", @"53",@"54", @"61",@"62", @"63",@"64", @"65",@"71", @"81",@"82", @"91"];
     BOOL areaFlag =NO;
     for (NSString *areaCode in areasArray) {
@@ -28,6 +33,12 @@
     }
     return areaFlag;
 }
+
+/*
+ *  功能：获取指定范围的字符串
+ *  参数：字符串的开始小标
+ *  参数：字符串的结束下标
+ */
 
 + (NSString *)_subStringWithString:(NSString *)str begin:(NSInteger)begin end:(NSInteger)end
 {
