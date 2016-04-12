@@ -39,19 +39,36 @@
                                     <constraint firstAttribute="height" constant="35" id="TS6-ww-BXQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入身份证号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnW-dP-2wv">
+                                <rect key="frame" x="40" y="57" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvp-Mi-pJV">
+                                <rect key="frame" x="188" y="194" width="68" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZJA-dG-AQS" firstAttribute="top" secondItem="HnW-dP-2wv" secondAttribute="bottom" constant="8" id="8ap-rL-ebZ"/>
+                            <constraint firstItem="ttR-Ug-kyQ" firstAttribute="leading" secondItem="cvp-Mi-pJV" secondAttribute="trailing" constant="10" id="CPS-BJ-9CE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ttR-Ug-kyQ" secondAttribute="bottom" constant="371" id="Ku8-4k-KI2"/>
+                            <constraint firstItem="cvp-Mi-pJV" firstAttribute="top" secondItem="ttR-Ug-kyQ" secondAttribute="top" id="ReL-zb-KUu"/>
                             <constraint firstItem="ttR-Ug-kyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sj0-KY-auf"/>
                             <constraint firstItem="ZJA-dG-AQS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="XwH-V3-hYa"/>
                             <constraint firstItem="ZJA-dG-AQS" firstAttribute="top" secondItem="is3-YI-3D9" secondAttribute="top" id="fP1-b6-yjI"/>
                             <constraint firstItem="ttR-Ug-kyQ" firstAttribute="top" secondItem="ZJA-dG-AQS" secondAttribute="bottom" constant="78" id="jfs-rQ-ira"/>
                             <constraint firstItem="is3-YI-3D9" firstAttribute="leading" secondItem="ZJA-dG-AQS" secondAttribute="trailing" constant="20" id="l8T-vZ-Gb9"/>
+                            <constraint firstItem="HnW-dP-2wv" firstAttribute="leading" secondItem="ZJA-dG-AQS" secondAttribute="leading" id="nlQ-zz-3t3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="is3-YI-3D9" secondAttribute="trailing" constant="20" id="oWI-Mh-4TF"/>
+                            <constraint firstItem="cvp-Mi-pJV" firstAttribute="height" secondItem="ttR-Ug-kyQ" secondAttribute="height" id="zbV-Ic-rWW"/>
                         </constraints>
                     </view>
                     <connections>
